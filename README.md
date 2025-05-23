@@ -13,7 +13,7 @@ How to use:
 
 robot_config.py
 
-CHange these values to match your robot.
+Change these values to match your robot.
 
 
 robot.py

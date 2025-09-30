@@ -4,7 +4,7 @@ from pybricks.tools import multitask, run_task, wait
 
 from icon_library import REBEL, display_pulse_icon
 from music_library import star_wars_opening
-from robot_config import DRIVE_BASE, HUB, LEFT_ATTACHMENT, RIGHT_ATTACHMENT
+from robot_config import DRIVE_BASE, HUB#, LEFT_ATTACHMENT, RIGHT_ATTACHMENT
 
 async def subtask():
     await display_pulse_icon(REBEL)
@@ -14,14 +14,15 @@ async def subtask():
 async def subtask2():
     # Turn on Gyro, drive forward
     DRIVE_BASE.use_gyro(True)
-    await DRIVE_BASE.straight(100)
-    for count in range(10):
-        await wait(0)
-        await DRIVE_BASE.straight(300)
+    #await DRIVE_BASE.straight(100) #in mm
+    for count in range(1):
+        await wait(1000)
+        await DRIVE_BASE.straight(50)
         await DRIVE_BASE.turn(180)
-        await DRIVE_BASE.straight(300)
+        await wait(1000)
+        await DRIVE_BASE.straight(-50)
         await DRIVE_BASE.turn(-180)
-    await DRIVE_BASE.straight(-100)
+    #await DRIVE_BASE.straight(-10)
     DRIVE_BASE.use_gyro(False)
 
 async def run1():
@@ -41,6 +42,7 @@ async def main():
     # Needed due to how the blocks work
     await multitask(
         wait(0),
+        run1()
     )
 
 

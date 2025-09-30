@@ -33,9 +33,9 @@ async def main():
     # Missions will need to be imported, see example missions/utility programs
     # below
     await add_program(run1, '1', Color.GREEN)
-    await add_program(push_measurements, 'P', Color.BLUE)
-    await add_program(left_attach_measurements, 'L', Color.BLUE)
-    await add_program(right_attach_measurements, 'R', Color.BLUE)
+    #await add_program(push_measurements, 'P', Color.BLUE)
+    #await add_program(left_attach_measurements, 'L', Color.BLUE)
+    #await add_program(right_attach_measurements, 'R', Color.BLUE)
     await add_program(run2, '2', Color.RED)
     # Launch the user interface
     await user_interface()

@@ -6,12 +6,12 @@ from pybricks.robotics import DriveBase
 
 # Set up all devices.
 HUB = PrimeHub(top_side=Axis.Z, front_side=Axis.X)
-#LEFT_COLOR_SENSOR = ColorSensor(Port.A)
-#RIGHT_COLOR_SENSOR = ColorSensor(Port.B)
+LEFT_COLOR_SENSOR = ColorSensor(Port.A)
+RIGHT_COLOR_SENSOR = ColorSensor(Port.E)
 DRIVE_LEFT = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 DRIVE_RIGHT = Motor(Port.F, Direction.CLOCKWISE)
 DRIVE_BASE = DriveBase(DRIVE_LEFT, DRIVE_RIGHT, 56, 114)
-#LEFT_ATTACHMENT = Motor(Port.C, Direction.CLOCKWISE)
+LEFT_ATTACHMENT = Motor(Port.C, Direction.CLOCKWISE)
 #RIGHT_ATTACHMENT = Motor(Port.D, Direction.CLOCKWISE)
 CENTER_ATTACHMENT = Motor(Port.D, Direction.CLOCKWISE)
 
@@ -21,7 +21,7 @@ ACCELERATION = 600
 TURN_SPEED = 400
 TURN_ACCELERATION = 1000
 
-#
+# for teleop
 MANUAL_MOTOR_SPEED = 250
 TELEOP_SPEED = 300
 TELEOP_ACCEL = 1000

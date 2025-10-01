@@ -8,7 +8,14 @@ Github url: https://github.com/infiniteroboticsteam/FLL-2025-2026
 1. download and install visual studio code
 2. download and install python
 3. follow this guide to set up vscode
+4. install github
+5. set up github, log in to github with your google account and create a github account.
+6. in github cmd (windows), set up user.name and user.email like below: 
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
 
+7. in vscode, clone our team repo.
+8. the code should be ready to use!
 
 
 

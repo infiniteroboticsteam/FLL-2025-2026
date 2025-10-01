@@ -1,6 +1,34 @@
 # FLL-2025-2026
 Starter Code for  Pybricks/FLL
 
+Github url: https://github.com/infiniteroboticsteam/FLL-2025-2026
+
+# set up
+
+1. download and install visual studio code
+2. download and install python
+3. follow this guide to set up vscode
+
+
+
+
+# code structure
+
+1. the parameters for our driving base and sensor ports are in robot_config.py
+
+2. Use run_demo.py as an example on how to write the code for a run.
+
+    A run is defined as a procedure where the driving base with attachments installed starts from a launch area and returns to either a home area or a launch area. 
+
+    A run can be programed to complete multiple missions.
+
+3. Steps to write your code for a run.
+    
+    * For each mission, define a function to move the each attachment to complete a mission.
+    * define a function to move the driving base, at approporiate waypoint (based on distance), add movements for attachments.
+    * test the function for a run in your run.
+
+4. At the end, we will use robot.py to add all runs to the program so that during the competition we run different runs by pressing buttons on the hub. Remember, laptop/ipad are not allowed in the game.
 
 New starter code for Pybricks/FLL
 

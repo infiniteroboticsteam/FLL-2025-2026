@@ -3,7 +3,7 @@ from pybricks.tools import multitask, run_task, wait
 
 from icon_library import REBEL, display_pulse_icon
 from music_library import star_wars_opening
-from robot_config import DRIVE_BASE, HUB, CENTER_ATTACHMENT#, LEFT_ATTACHMENT, RIGHT_ATTACHMENT
+from robot_config_mini import DRIVE_BASE, HUB, CENTER_ATTACHMENT#, LEFT_ATTACHMENT, RIGHT_ATTACHMENT
 
 async def subtask_play_start_wars():
     await display_pulse_icon(REBEL)

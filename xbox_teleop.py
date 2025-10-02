@@ -4,7 +4,7 @@ from pybricks.parameters import Button, Color, Stop
 from pybricks.tools import multitask, run_task, wait
 
 from library import set_drivebase
-from robot_config import DRIVE_BASE, HUB, LEFT_ATTACHMENT, RIGHT_ATTACHMENT, TELEOP_ACCEL, TELEOP_ATTACH_SPEED, TELEOP_SPEED, TELEOP_TURN, TELEOP_TURN_ACCEL
+from robot_config_mini import DRIVE_BASE, HUB, LEFT_ATTACHMENT, RIGHT_ATTACHMENT, TELEOP_ACCEL, TELEOP_ATTACH_SPEED, TELEOP_SPEED, TELEOP_TURN, TELEOP_TURN_ACCEL
 
 # Set up all devices.
 XBOX = XboxController()

@@ -2,12 +2,13 @@
 from pybricks.parameters import Color
 from pybricks.tools import multitask, run_task, wait
 
-from example import run1
 from library import set_drivebase
-from measurements import left_attach_measurements, push_measurements, right_attach_measurements
-from text_example import run2
 from text_library import print_drivebase_settings
+from measurements import left_attach_measurements, push_measurements, right_attach_measurements
 from ui import add_program, user_interface
+
+from run_demo_mini import run1
+from text_example import run2
 
 async def main():
     # Import from xbox_teleop the teleop function if you want to use
@@ -41,4 +42,5 @@ async def main():
     await user_interface()
 
 
-run_task(main())
+if "__file__" == "__main__":
+    run_task(main())
